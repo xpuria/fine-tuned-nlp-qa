@@ -1,6 +1,3 @@
-Certainly! Below is a **README template** that you can use for your project, detailing the fine-tuned models, A100 GPU usage, setup instructions, and test procedure for running the models in **Google Colab**.
-
----
 
 # **README: Fine-Tuning and Evaluating T5 Models for Scientific Question Answering with Dense Passage Retrieval on A100 GPU**
 
