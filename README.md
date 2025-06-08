@@ -157,3 +157,16 @@ In this project, the fine-tuned **T5** models, including those using **DPR for c
 To run the models and tests in **Google Colab**, follow the instructions outlined in the **Setup** section. Ensure that the runtime is configured to use the **A100 GPU** and that the necessary libraries are installed. You can then run the code provided in this README to verify that your models are working correctly.
 
 Let me know if you need any further adjustments or clarifications!
+
+### Local Script Usage
+The repository now includes a set of Python scripts in the `scripts/` directory so you can run the workflow outside of a notebook.
+
+```
+python -m scripts.load_dataset      # inspect and format the SciQ dataset
+python -m scripts.train_t5          # fine-tune the T5 model
+python -m scripts.build_dpr_index   # create a DPR + FAISS index
+python -m scripts.rag_react         # run retrieval augmented generation
+python -m scripts.evaluate          # quick evaluation using the fine-tuned model
+```
+
+Run each command from the repository root. Ensure the required libraries from the setup section are installed.
